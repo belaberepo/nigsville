@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.user.setActivity("kaboom");
 client.on('message', (message) => {
     
     if (message.content.startsWith("!" + "nuke")) {
