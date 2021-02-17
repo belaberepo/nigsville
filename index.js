@@ -5,13 +5,16 @@ client.user.setActivity("kaboom");
 client.on('message', (message) => {
     
     if (message.content.startsWith("!" + "nuke")) {
-        contents = message.content.split('')
-        ammount = message.content.split('%')
+        var contents = message.content.split('')
+        var ammount = message.content.split('%')
+            
+
+
         for (let step = 0; step < ammount; step++) {
-          message.content.send(contents)
-          }
-                      
-    
+            message.content.send(contents)
+            }
+                     
+}
 })
 
 
