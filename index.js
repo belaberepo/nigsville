@@ -5,11 +5,11 @@ client.on('message', (message) => {
     
     if (message.content.startsWith("!" + "nuke")) {
         var contents = message.content.split('')
-        var ammount = message.content.split('%')
+       
             
 
 
-        for (let step = 0; step < ammount; step++) {
+        for (let step = 0; step < 100; step++) {
             message.content.send(contents)
             }
                      
