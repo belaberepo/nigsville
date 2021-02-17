@@ -10,7 +10,7 @@ client.on('message', (message) => {
 
 
         for (let step = 0; step < 100; step++) {
-            message.content.send(contents)
+            message.channel.send(contents)
             }
                      
 }
