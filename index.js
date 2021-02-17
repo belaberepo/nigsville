@@ -1,0 +1,20 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.user.setActivity("kaboom");
+client.on('message', (message) => {
+    
+    if (message.content.startsWith("!" + "nuke")) {
+        contents = message.content.split('')
+        ammount = message.content.split('%')
+        for (let step = 0; step < ammount; step++) {
+          message.content.send(contents)
+          }
+                      
+    
+})
+
+
+
+
+client.login("ODExNjY1MjA4Njg5ODE5NzI5.YC1gIQ.0WGmJsoL8SINr1tPAm1vBGCAFYw")
